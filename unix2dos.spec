@@ -6,7 +6,7 @@ Summary(ru):	unix2dos - конвертор текстовых файлов UNIX в формат DOS
 Summary(uk):	unix2dos - конвертор текстових файл╕в UNIX в формат DOS
 Name:		unix2dos
 Version:	2.2
-Release:	4
+Release:	5
 License:	BSD-like
 Group:		Applications/Text
 Source0:	%{name}-%{version}.src.tar.gz
