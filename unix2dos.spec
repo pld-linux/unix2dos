@@ -1,0 +1,55 @@
+Summary:	unix2dos - UNIX to DOS text file format converter
+Summary(fr):	Convertisseur de format de fichier texte
+Summary(pl):	unix2dos - konwerter plikСw tekstowych z formatu UNIX na DOS
+Summary(pt_BR):	Conversor de formatos de arquivos texto
+Summary(ru):	unix2dos - конвертор текстовых файлов UNIX в формат DOS
+Summary(uk):	unix2dos - конвертор текстових файл╕в UNIX в формат DOS
+Name:		unix2dos
+Version:	2.2
+Release:	3
+License:	BSD-like
+Group:		Applications/Text
+Source0:	%{name}-%{version}.src.tar.gz
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%description
+A utility that converts plain text files in UNIX format to DOS format.
+
+%description -l fr
+unix2dos converti des fichier texte UNIX au format DOS.
+
+%description -l pl
+Zestaw narzЙdzi do konwersji plikСw tekstowych w formacie UNIX na
+u©ywany poprzez DOS-a.
+
+%description -l pt_BR
+O unix2dos converte arquivos texto do UNIX para o formato texto do
+DOS.
+
+%description -l ru
+unix2dos - конвертор текстовых файлов UNIX в формат DOS.
+
+%description -l uk
+unix2dos - конвертор текстових файл╕в UNIX в формат DOS.
+
+%prep
+%setup -q -c
+
+%build
+%{__cc} %{rpmcflags} -o unix2dos unix2dos.c
+
+%install
+rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
+
+install unix2dos $RPM_BUILD_ROOT%{_bindir}
+install unix2dos.1 $RPM_BUILD_ROOT%{_mandir}/man1
+
+%clean
+rm -rf $RPM_BUILD_ROOT
+
+%files
+%defattr(644,root,root,755)
+%doc COPYRIGHT
+%attr(755,root,root) %{_bindir}/*
+%{_mandir}/man1/*
