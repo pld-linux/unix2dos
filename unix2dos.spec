@@ -10,6 +10,7 @@ Release:	3
 License:	BSD-like
 Group:		Applications/Text
 Source0:	%{name}-%{version}.src.tar.gz
+# Source0-md5:	e4488c241fa9067a48a7534a21d4babb
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
