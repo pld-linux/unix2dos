@@ -20,7 +20,7 @@ unix2dos converti des fichier texte UNIX au format DOS.
 
 %description -l pl
 Zestaw narzêdzi do konwersji plików tekstowych w formacie UNIX na
-u¿ywany poprzez DOS-a.
+format u¿ywany przez DOS-a.
 
 %description -l pt_BR
 O unix2dos converte arquivos texto do UNIX para o formato texto do
