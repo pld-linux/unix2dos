@@ -1,9 +1,9 @@
 Summary:	unix2dos - UNIX to DOS text file format converter
-Summary(fr.UTF-8):   Convertisseur de format de fichier texte
-Summary(pl.UTF-8):   unix2dos - konwerter plików tekstowych z formatu UNIX na DOS
-Summary(pt_BR.UTF-8):   Conversor de formatos de arquivos texto
-Summary(ru.UTF-8):   unix2dos - конвертор текстовых файлов UNIX в формат DOS
-Summary(uk.UTF-8):   unix2dos - конвертор текстових файлів UNIX в формат DOS
+Summary(fr.UTF-8):	Convertisseur de format de fichier texte
+Summary(pl.UTF-8):	unix2dos - konwerter plików tekstowych z formatu UNIX na DOS
+Summary(pt_BR.UTF-8):	Conversor de formatos de arquivos texto
+Summary(ru.UTF-8):	unix2dos - конвертор текстовых файлов UNIX в формат DOS
+Summary(uk.UTF-8):	unix2dos - конвертор текстових файлів UNIX в формат DOS
 Name:		unix2dos
 Version:	2.2
 Release:	5
